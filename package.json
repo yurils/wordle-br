@@ -1,6 +1,6 @@
 {
   "name": "wordle-br",
-  "description": "A remake of the popular game Wordle with additional modes and features.",
+  "description": "Fork em pt-br do jogo Wordle+ por MikhaD.",
   "version": "1.5.2",
   "type": "module",
   "private": "true",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikhaD/wordle.git"
+    "url": "git+https://github.com/yurils/wordle-br.git"
   },
   "keywords": [],
   "author": "MikhaD",
   "bugs": {
-    "url": "https://github.com/MikhaD/wordle/issues"
+    "url": "https://github.com/yurils/wordle-br/issues"
   },
-  "homepage": "https://github.com/MikhaD/wordle#readme",
+  "homepage": "https://github.com/yurils/wordle-br#readme",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
     "@tsconfig/svelte": "^3.0.0",
