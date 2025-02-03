@@ -1,14 +1,17 @@
 import seedRandom from "seedrandom";
 import { GameMode, ms } from "./enums";
-import wordList from "./words_5";
+import {wordList, normalize} from "./words_5";
 
 export const ROWS = 6;
 export const COLS = 5;
 
+function getNormalizedWord(input: string): string {
+  return normalize[input] || input;
+}
 export const words = {
 	...wordList,
 	contains: (word: string) => {
-		return wordList.words.includes(word) || wordList.valid.includes(word);
+		return wordList.words.includes(getNormalizedWord(word)) || wordList.valid.includes(getNormalizedWord(word));
 	},
 };
 
