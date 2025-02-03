@@ -5,9 +5,10 @@ import {wordList, normalize} from "./words_5";
 export const ROWS = 6;
 export const COLS = 5;
 
-function getNormalizedWord(input: string): string {
+export function getNormalizedWord(input: string): string {
   return normalize[input] || input;
 }
+
 export const words = {
 	...wordList,
 	contains: (word: string) => {
@@ -426,7 +427,17 @@ export class LetterStates {
 	public x: LetterState = "🔳";
 	public y: LetterState = "🔳";
 	public z: LetterState = "🔳";
-
+  public á: LetterState = "🔳";
+  public é: LetterState = "🔳";
+  public í: LetterState = "🔳";  
+  public ó: LetterState = "🔳";
+  public ú: LetterState = "🔳";
+  public â: LetterState = "🔳";
+  public ê: LetterState = "🔳";
+  public ã: LetterState = "🔳";
+  public õ: LetterState = "🔳";
+  
+  
 	constructor(board?: GameBoard) {
 		if (board) {
 			for (let row = 0; row < ROWS; ++row) {
