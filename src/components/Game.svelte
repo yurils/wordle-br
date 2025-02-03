@@ -61,6 +61,7 @@
       toaster.pop("Not enough letters");
       board.shake(game.guesses);
     } else if (words.contains(getNormalizedWord(game.latestWord))) {
+      const submitedWord = game.latestWord;
       game.board.words[game.guesses] = getNormalizedWord(game.latestWord);
       if (game.guesses > 0) {
         const hm = game.checkHardMode();
@@ -82,7 +83,7 @@
       }
       game.board.state[game.guesses] = game.guess(word);
       ++game.guesses;
-      $letterStates.update(game.lastState, game.lastWord);
+      $letterStates.update(game.lastState, submitedWord);
       $letterStates = $letterStates;
       if (game.lastWord === word) win();
       else if (game.guesses === ROWS) lose();

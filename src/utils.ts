@@ -427,16 +427,6 @@ export class LetterStates {
 	public x: LetterState = "🔳";
 	public y: LetterState = "🔳";
 	public z: LetterState = "🔳";
-  public á: LetterState = "🔳";
-  public é: LetterState = "🔳";
-  public í: LetterState = "🔳";  
-  public ó: LetterState = "🔳";
-  public ú: LetterState = "🔳";
-  public â: LetterState = "🔳";
-  public ê: LetterState = "🔳";
-  public ã: LetterState = "🔳";
-  public õ: LetterState = "🔳";
-  
   
 	constructor(board?: GameBoard) {
 		if (board) {
